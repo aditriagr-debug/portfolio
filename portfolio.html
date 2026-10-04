@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditri Agrawal | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #161a22;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --border-color: #262c36;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header / Bio Section */
+        header {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        .profile-title h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .profile-subtitle {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .profile-bio {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 800px;
+        }
+
+        /* Portfolio Section */
+        .section-header {
+            margin-bottom: 24px;
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .project-count {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .drive-link-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            width: 100%;
+        }
+
+        .drive-link-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .drive-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile-title">
+                <h1>Aditri Agrawal</h1>
+                <div class="profile-subtitle">B.Tech in Electronics & Communication | Manipal University Jaipur (2026–2030)</div>
+                <div class="profile-bio">
+                    Creative technical student specializing in audio-visual storytelling, video editing, caption writing, and photography. Below are my featured work samples categorized by skill area.
+                </div>
+            </div>
+        </header>
+
+        <!-- Portfolio Items -->
+        <div class="section-header">
+            <h2>Work Samples & Deliverables</h2>
+        </div>
+
+        <div class="portfolio-grid">
+            
+            <!-- 1. Audio Synchronization -->
+            <div class="project-card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge">Audio & Sound</span>
+                        <span class="project-count">1 Sample</span>
+                    </div>
+                    <h3>Audio Synchronization</h3>
+                    <p>Precise track alignment, sound mixing, and seamless audio-video integration.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1KKKQ6JoThgpUCxmZanUHbssyP1rB_wG8/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                    <svg class="drive-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>View Audio Sync Work</span>
+                </a>
+            </div>
+
+            <!-- 2. Editing from Inspiration -->
+            <div class="project-card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge">Creative</span>
+                        <span class="project-count">1 Sample</span>
+                    </div>
+                    <h3>Editing from Inspiration</h3>
+                    <p>Mood matching, aesthetic pacing, and creative reference transformation into original edits.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/16UQ9B6DofGHCpxG7wo3A_bgVv4I6vG3b/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                    <svg class="drive-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>View Inspo Edit Sample</span>
+                </a>
+            </div>
+
+            <!-- 3. Video Editing -->
+            <div class="project-card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge">Visuals</span>
+                        <span class="project-count">1 Sample</span>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Pacing, transitions, color grading, and dynamic visual storytelling across projects.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1JNbC9IiMMHiLqQb33OQ_6aRdUJ4YAxwa/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                    <svg class="drive-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>View Video Editing Sample</span>
+                </a>
+            </div>
+
+            <!-- 4. Caption Writing -->
+            <div class="project-card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge">Content & Copy</span>
+                        <span class="project-count">3 Samples</span>
+                    </div>
+                    <h3>Caption Writing</h3>
+                    <p>Engaging subtitles, copywriting, social media captions, and synchronized text overlays.</p>
+                </div>
+                <div class="link-list">
+                    <a href="https://drive.google.com/file/d/1KkyPt7bTKxRR-m13c8VPEywgacq6BZLi/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                        <span>View Caption Sample 1</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1-REsaKnbaaxSpFeoOZHYOJ8vwJGEGZmY/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                        <span>View Caption Sample 2</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1s_QZFePSBRrqoLZ0D5FfG-r0b9FrifIB/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                        <span>View Caption Sample 3</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Photography -->
+            <div class="project-card">
+                <div>
+                    <div class="card-header">
+                        <span class="badge">Visual Arts</span>
+                        <span class="project-count">2 Samples</span>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Visual framing, creative composition, lighting, and post-processing photo editing.</p>
+                </div>
+                <div class="link-list">
+                    <a href="https://drive.google.com/file/d/1zIOt4IxtcQN6DX8_PLsJIu7xloMapCMP/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                        <span>View Photography Sample 1</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/10onI6IjAZB13QPKMhRwF1zsllkybuTen/view?usp=drive_link" target="_blank" class="drive-link-btn">
+                        <span>View Photography Sample 2</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            © Aditri Agrawal | Portfolio
+        </footer>
+    </div>
+
+</body>
+</html>
